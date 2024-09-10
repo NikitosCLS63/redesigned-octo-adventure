@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:xlmns="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivision"
+    android:id="@+id/main"
+    >
+
+
+
+    <ImageView
+        android:id="@+id/img_blink"
+        app:layout_constraintBaseline_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/dog"
+         />
+
+    <Button
+        android:id="@+id/start_tween"
+        android:layout_width="166dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="436dp"
+
+        android:text="Старт"
+        xlmns:layout_constraintBottom_toBottomOf="parent"
+        xlmns:layout_constraintEnd_toEndOf="parent"
+        xlmns:layout_constraintHorizontal_bias="0.82"
+        xlmns:layout_constraintStart_toStartOf="parent"
+        xlmns:layout_constraintTop_toTopOf="@+id/img_blink"
+        xlmns:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/pause_tween"
+        android:layout_width="156dp"
+        android:layout_height="67dp"
+        android:text="Пауза"
+        app:layout_constraintEnd_toEndOf="@id/start_tween"
+        app:layout_constraintStart_toStartOf="parent"
+        xlmns:layout_constraintBottom_toBottomOf="parent"
+        xlmns:layout_constraintHorizontal_bias="0.156"
+        xlmns:layout_constraintTop_toTopOf="parent"
+        xlmns:layout_constraintVertical_bias="0.65" />
+
+    <Button
+        android:id="@+id/btnnazad"
+        android:layout_width="227dp"
+        android:layout_height="63dp"
+        android:layout_centerInParent="true"
+        android:text="назад"
+        xlmns:layout_constraintBottom_toBottomOf="parent"
+        xlmns:layout_constraintEnd_toEndOf="parent"
+        xlmns:layout_constraintHorizontal_bias="0.497"
+        xlmns:layout_constraintStart_toStartOf="parent"
+        xlmns:layout_constraintTop_toTopOf="parent"
+        xlmns:layout_constraintVertical_bias="0.935" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
